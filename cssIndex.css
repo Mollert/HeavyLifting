@@ -1,0 +1,121 @@
+
+@font-face {
+	src: url(./fonts/CherryCreamSoda-Regular.ttf);
+	font-family: CCS;
+}
+
+@font-face {
+	src: url(./fonts/OpenSans/OpenSans-Bold.ttf);
+	font-family: OS-Bold;
+}
+/*OSsans-serif, CCScursive*/
+
+body, html {
+	margin: 0;
+}
+
+#topFrame {
+	background-color: darkblue;
+	position: relative;
+	padding-top: 2rem;
+	font-family: CCS;
+}
+
+#topBackdrop {
+	margin: 0 2rem;
+	height: 60rem;
+	position: relative;
+	background-image: url("./image/sherpaClimber.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#headingText {
+	padding-top: 3rem;
+	font-size: 2rem;
+	color: darkblue;
+	text-align: center;
+}
+
+#textBack {
+	background-color: rgba(176, 196, 222, 0.8);
+	padding: 1rem 2rem;
+	border-radius: 1.8rem;
+	border: 0.4rem solid darkblue;
+}
+
+#messageBox {
+	position: absolute;
+	width: 18rem;
+	height: 21.6rem;
+	top: 16rem;
+	left: 10vw;
+	background-color: rgba(176, 196, 222, 0.8);
+	border-radius: 2rem;
+	border: 0.4rem solid darkblue;
+	opacity: 0;
+	animation-name: messageBoard;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+	animation-timing-function: ease-in;
+}
+
+@keyframes messageBoard {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.messageText {
+	padding: 0 1rem;
+	font-size: 2rem;
+	color: darkblue;
+	text-align: center;
+}
+
+.topFrameSvg {
+	position: absolute;
+	bottom: 0;
+}
+
+
+
+
+
+#contact {
+	background: slategray;
+	width: 100%;
+	height: auto;
+}
+
+#contactList {
+	margin-top: 0;
+	padding: 3rem 0 6rem 3rem
+}
+
+.contactIntro {
+	font-family: CCS;
+	color: white;
+	font-size: 1.6rem;
+}
+
+#secondIntro {
+	margin: .6rem 0 3rem 1.4rem;
+}
+
+.contactSpec {
+	font-family: OS-Bold;
+	margin: .8rem 4rem;
+	font-size: 1.2rem;	
+}
+
+#contactResume a {
+	color: darkblue;
+}
+
+
+
+

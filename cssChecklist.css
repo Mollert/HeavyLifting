@@ -1,0 +1,101 @@
+
+#checklist {
+	width: 100%;
+	margin: 4rem 0 3rem 0;
+}
+
+#listTextIntro {
+	font-family: CCS;
+	font-size: 1.6rem;
+	color: crimson;
+	text-align: center;
+	margin: 1rem 6rem;		
+}
+
+#listGroup {
+	font-family: OS-Bold;	
+	font-size: 1.2rem;
+	margin: 0 4rem ;
+}
+
+.listItem {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+}
+
+.checkImage {
+	width: 2rem;
+	margin-top: 1rem;
+}
+
+.listSentence {
+	margin-left: 1rem;
+	transition-property: transform;
+	transition-duration: 1.5s;
+	transform: rotateX(90deg);
+}
+
+.listCheck {
+	transition-property: opacity;
+	opacity: 0;
+}
+
+#listSentence1.active {
+	transform: rotateX(0deg);	
+}
+
+#listImage1.active {
+	transition-delay: 1.5s;	
+	opacity: 1;
+}
+
+#listSentence2.active {
+	transform: rotateX(0deg);	
+	transition-delay: 1.5s;
+}
+
+#listImage2.active {
+	transition-delay: 3s;	
+	opacity: 1;
+}
+
+#listSentence3.active {
+	transform: rotateX(0deg);	
+	transition-delay: 3s;
+}
+
+#listImage3.active {
+	transition-delay: 4.5s;	
+	opacity: 1;
+}
+
+#listSentence4.active {
+	transform: rotateX(0deg);
+	transition-delay: 4.5s;
+}
+
+#listImage4.active {
+	transition-delay: 6s;	
+	opacity: 1;
+}
+
+#listSentence5.active {
+	transform: rotateX(0deg);
+	transition-delay: 6s;
+}
+
+#listImage5.active {
+	transition-delay: 7.5s;	
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+

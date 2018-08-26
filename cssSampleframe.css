@@ -1,0 +1,117 @@
+
+#sampleFrame {
+	background-color: darkblue;
+	position: relative;
+	width: 100%;
+	height: 60rem;
+}
+
+.sampleFrameSvg {
+	position: absolute;
+	top: 0;
+}
+
+#sampleBackdrop {
+	position: absolute;
+	top: 200px;
+	left: 2rem;
+	right: 2rem;
+	bottom: 2rem;
+	background-color: rgba(176, 196, 222, 0.8);
+}
+
+#displayText {
+	font-family: CCS;
+	font-size: 1.8rem;
+	word-spacing: 0.6rem;
+	text-align: center;
+}
+
+
+
+
+#displayCase {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.aCard {
+	position: relative;	
+	width: 18rem;
+	height: 19rem;
+	margin-top: 1.2rem;
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	perspective: 1000;
+}
+
+.frontBack {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: all 1.0s linear;	
+	-moz-transition: all 1.0s linear;
+	-o-transition: all 1.0s linear;
+	-ms-transition: all 1.0s linear;	
+	transition: all 1.0s linear;
+}
+
+.aCard:hover .frontBack{
+	transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);	
+	-moz-transform: rotateY(180deg);	
+	-webkit-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);	
+}
+
+.cardFront {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: lavender;
+	-webkit-backface-visibility : hidden;
+	backface-visibility : hidden;
+	border-style: solid;
+	border-width: 0.3rem;
+}
+
+.cardFront p {
+	font-family: CCS;
+	font-size: 1.4rem;
+	color: darkblue;
+	text-align: center;
+	text-decoration: underline;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0.2rem;
+}
+
+.cardBack {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: slategray;
+	-webkit-backface-visibility : hidden;	
+	backface-visibility : hidden;
+	transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);	
+	-moz-transform: rotateY(180deg);	
+	-webkit-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);	
+}
+
+.cardBack p {
+	font-family: OS-Bold;	
+	font-size: 1.1rem;
+	color: white;
+	text-align: center;
+	margin-left: 1.6rem;
+	margin-right: 1.6rem;
+}
+
+.cardBack a {
+	color: darkblue;
+}
