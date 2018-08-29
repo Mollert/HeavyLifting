@@ -1,5 +1,5 @@
 
-function debounce(func, wait=20, immediate=true) {
+function debounce(func, wait=40, immediate=true) {
 	var timeout;
 	return function() {
 		var context = this, args = arguments;
@@ -20,10 +20,9 @@ let allChecks = document.querySelectorAll(".listCheck");
 let screenTopToID = listGroup.offsetTop;
 
 function weAreThere() {
-	let runningHeight = window.pageYOffset;
-	let winHeight = window.innerHeight;
+	let runningHeight = window.pageYOffset + window.innerHeight;
 
-	if ( (runningHeight + winHeight) > screenTopToID && !(allSentences[0].classList.contains("active"))) {
+	if ( runningHeight > screenTopToID && !(allSentences[0].classList.contains("active"))) {
 		allSentences.forEach(function(unit) {
 			unit.classList.add("active");
 		});
@@ -32,7 +31,7 @@ function weAreThere() {
 		});		
 	}
 
-	if ( (runningHeight + winHeight) < screenTopToID && (allSentences[0].classList.contains("active"))) {
+	if ( runningHeight < screenTopToID && (allSentences[0].classList.contains("active"))) {
 		allSentences.forEach(function(unit) {
 			unit.classList.remove("active");
 		});
@@ -42,5 +41,5 @@ function weAreThere() {
 	}
 };
 
-window.addEventListener('scroll', debounce(weAreThere));
+window.addEventListener("scroll", debounce(weAreThere));
 
