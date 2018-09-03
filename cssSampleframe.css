@@ -115,3 +115,42 @@
 .cardBack a {
 	color: darkblue;
 }
+
+@media screen and (max-width: 927px) {
+	#sampleFrame {
+		height: 80rem;	
+	}
+}
+
+@media screen and (max-width: 641px) {
+	#sampleFrame {
+		height: 144rem;	
+	}
+}
+
+@media screen and (max-width: 415px) {
+	#sampleFrame {
+		height: 163rem;	
+	}
+
+	.aCard {
+		width: 11rem;
+		height: 22rem;
+	}
+
+	.cardFront img {
+		width: 100%;
+		height: auto;
+	}
+
+	.cardFront p {
+		padding-top: 4rem;
+	}
+
+	.cardBack p {
+		font-size: 0.9rem;
+	}
+}
+
+
+

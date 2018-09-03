@@ -33,17 +33,24 @@ body, html {
 }
 
 #headingText {
-	padding-top: 3rem;
-	font-size: 2rem;
-	color: darkblue;
-	text-align: center;
+	position: absolute;
+	margin: 2rem auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 34rem;
+	height: 4rem;
+	background-color: rgba(176, 196, 222, 0.8);
+	border-radius: 2rem;
+	border: 0.4rem solid darkblue;	
 }
 
 #textBack {
-	background-color: rgba(176, 196, 222, 0.8);
-	padding: 1rem 2rem;
-	border-radius: 1.8rem;
-	border: 0.4rem solid darkblue;
+	margin: 0.8rem 1.8rem;
+	font-size: 2rem;
+	color: darkblue;
+	text-align: center;
 }
 
 #messageBox {
@@ -117,5 +124,29 @@ body, html {
 }
 
 
+
+@media screen and (max-width: 640px) {
+	#headingText {
+		width: 20rem;
+		height: 6.8rem;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	#headingText {
+		width: 12rem;
+		height: 11.0rem;
+	}
+
+	#messageBox {
+		margin: 16rem auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 12rem;
+		height: 33rem;
+	}	
+}
 
 
