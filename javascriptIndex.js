@@ -1,4 +1,5 @@
 
+// Query web page only every 40 milliseconds
 function debounce(func, wait=40, immediate=true) {
 	var timeout;
 	return function() {
@@ -13,6 +14,8 @@ function debounce(func, wait=40, immediate=true) {
 		if (callNow) func.apply(context, args);
 	};
 };
+
+// Tell when list items are in view then adding class which starts css animation
 
 let listGroup = document.getElementById("listGroup");
 let allSentences = document.querySelectorAll(".listSentence");

@@ -1,4 +1,6 @@
 
+/* Top of website along with changes due to media size */
+
 @font-face {
 	src: url(./fonts/CherryCreamSoda-Regular.ttf);
 	font-family: CCS;
@@ -29,7 +31,7 @@ body, html {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-attachment: fixed;  
 }
 
 #headingText {
@@ -88,42 +90,7 @@ body, html {
 	bottom: 0;
 }
 
-
-
-
-
-#contact {
-	background: slategray;
-	width: 100%;
-	height: auto;
-}
-
-#contactList {
-	margin-top: 0;
-	padding: 3rem 0 6rem 3rem
-}
-
-.contactIntro {
-	font-family: CCS;
-	color: white;
-	font-size: 1.6rem;
-}
-
-#secondIntro {
-	margin: .6rem 0 3rem 1.4rem;
-}
-
-.contactSpec {
-	font-family: OS-Bold;
-	margin: .8rem 4rem;
-	font-size: 1.2rem;	
-}
-
-#contactResume a {
-	color: darkblue;
-}
-
-
+/* changes due to different screen sizes */
 
 @media screen and (max-width: 640px) {
 	#headingText {
@@ -133,6 +100,10 @@ body, html {
 }
 
 @media screen and (max-width: 460px) {
+	#topBackdrop {	
+	background-image: url("./image/sherpaClimberShifted.png");	
+	}
+	
 	#headingText {
 		width: 12rem;
 		height: 11.0rem;
@@ -148,5 +119,4 @@ body, html {
 		height: 33rem;
 	}	
 }
-
 

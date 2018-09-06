@@ -13,7 +13,8 @@
 
 	<link rel="stylesheet" type="text/css" href="cssIndex.css">
 	<link rel="stylesheet" type="text/css" href="cssChecklist.css">
-	<link rel="stylesheet" type="text/css" href="cssSampleframe.css">
+	<link rel="stylesheet" type="text/css" href="cssSampleFrame.css">
+	<link rel="stylesheet" type="text/css" href="cssInClosing.css">	
 	
 </head>
 <body>
@@ -174,7 +175,21 @@
 		</div>
 	</div>
 
-	<div id="contact">
+	<div id="inClosing">
+		<div id="timing">
+			<p class="dateTime" id="landOne"></p>
+			<p class="dateTime" id="landTwo"></p>
+			<p class="dateTime" id="landThree"></p>	
+			<div id="howLong">
+				<p class="timeSpent" id="theBeginning">And you've been here</p>
+				<p class="timeSpent" id="minutes"></p>
+				<p class="timeSpent" id="textMinute">minute</p>
+				<p class="timeSpent" id="howMany"></p>
+				<p class="timeSpent" id="textAnd">and</p>
+				<p class="timeSpent" id="seconds"></p>
+				<p class="timeSpent" id="textSecond">seconds.</p>
+			</div>	
+		</div>
 		<div id="contactList">
 			<p class="contactIntro">It's now up to you . . .</p>
 			<p class="contactIntro" id="secondIntro">I'm ready, so let's get started!</p>		
@@ -185,6 +200,7 @@
 	</div>
 
 	<script src="javascriptIndex.js"></script>
+	<script src="javascriptDateTime.js"></script>
 
 </body>
 </html>
