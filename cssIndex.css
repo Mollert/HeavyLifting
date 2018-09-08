@@ -93,6 +93,9 @@ body, html {
 /* changes due to different screen sizes */
 
 @media screen and (max-width: 640px) {
+	#topBackdrop {	
+	background-image: url("./image/sherpaClimberShifted.png");	
+	}
 	#headingText {
 		width: 20rem;
 		height: 6.8rem;
@@ -100,10 +103,6 @@ body, html {
 }
 
 @media screen and (max-width: 460px) {
-	#topBackdrop {	
-	background-image: url("./image/sherpaClimberShifted.png");	
-	}
-	
 	#headingText {
 		width: 12rem;
 		height: 11.0rem;

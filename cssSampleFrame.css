@@ -16,7 +16,7 @@ which includes the card flipping animation */
 
 #sampleBackdrop {
 	position: absolute;
-	top: 200px;
+	top: 0px;
 	left: 2rem;
 	right: 2rem;
 	bottom: 2rem;
@@ -28,6 +28,7 @@ which includes the card flipping animation */
 	font-size: 1.8rem;
 	word-spacing: 0.6rem;
 	text-align: center;
+	margin-top: 200px;
 }
 
 
