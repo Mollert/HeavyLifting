@@ -10,7 +10,6 @@
 	src: url(./fonts/OpenSans/OpenSans-Bold.ttf);
 	font-family: OS-Bold;
 }
-/*OSsans-serif, CCScursive*/
 
 body, html {
 	margin: 0;
@@ -27,7 +26,7 @@ body, html {
 	margin: 0 2rem;
 	height: 60rem;
 	position: relative;
-	background-image: url("./image/sherpaClimber.png");
+	background-image: url("../image/sherpaClimber.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -94,7 +93,7 @@ body, html {
 
 @media screen and (max-width: 640px) {
 	#topBackdrop {	
-	background-image: url("./image/sherpaClimberShifted.png");	
+	background-image: url("../image/sherpaClimberShifted.png");	
 	}
 	#headingText {
 		width: 20rem;
