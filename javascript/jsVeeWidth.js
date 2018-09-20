@@ -34,7 +34,7 @@ let cSnumerator = Math.pow(shortWidth, 2) + 40000;
 let cS = cSnumerator / aSdenominator;
 const shortHypot = quadrad(aS, bS, cS);
 // Once the hypotenuse is found, use the pythagorean theorem again
-const shortHeight = Math.ceil(pythag(shortWidth, shortHypot));
+const shortHeight = Math.round(pythag(shortWidth, shortHypot));
 
 
 // ** Figures to find the longHeight **
@@ -47,7 +47,7 @@ let cLnumerator = Math.pow(longWidth, 2) + 40000;
 let cL = cLnumerator / aLdenominator;
 const longHypot = quadrad(aL, bL, cL);
 
-const longHeight = Math.ceil(pythag(longWidth, longHypot));
+const longHeight = Math.round(pythag(longWidth, longHypot));
 
 
 /* ** Figuring the V offset **
@@ -60,8 +60,8 @@ const vAngle = Math.PI - (shortAngle + longAngle);
 
 let longSide = workingWidth * Math.sin(shortAngle) / Math.sin(vAngle);
 
-const vOffsetX = Math.ceil(longSide * Math.cos(longAngle));
-const vOffsetY = Math.ceil(longSide * Math.sin(longAngle));
+const vOffsetX = Math.floor(longSide * Math.cos(longAngle));
+const vOffsetY = Math.floor(longSide * Math.sin(longAngle));
 
 
 // Obtains the height difference between the blue and the white . . . from the left side to the right . . . and the height at the V
