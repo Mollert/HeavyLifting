@@ -61,6 +61,12 @@ if (hour === 0) {
 	}
 } else if (hour === 12 && minute === 0) {
 	readTime = "noon.";
+} else if (hour === 12 && minute !== 0) {
+	if (minute < 10) {
+		readTime = hour + ":0" + minute + " in the afternoon."		
+	} else {
+		readTime = hour + ":" + minute + " in the afternoon.";
+	}
 } else if (hour > 12 && hour < 18) {
 	hour = correctHour(hour);
 	if (minute === 0) {
@@ -109,9 +115,9 @@ const runningTime = () => {
 	document.getElementById("minutes").innerHTML = min;
 	document.getElementById("howMany").innerHTML = plural;
 	document.getElementById("seconds").innerHTML = tenthSecond[sec];
-	if (min > 4) {
+	if (min > 2) {
 		clearInterval(showTime);
-		document.getElementById("howLong").innerHTML = "You've been here for five minutes.  Time to give me a call!";
+		document.getElementById("howLong").innerHTML = "You've been here for three minutes.  Time to give me a call!";
 	}
 }
 
