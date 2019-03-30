@@ -75,13 +75,13 @@ which includes the card flipping animation */
 
 .cardFront p {
 	font-family: CCS;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	color: darkblue;
 	text-align: center;
 	text-decoration: underline;
 	margin-top: 0;
 	margin-bottom: 0;
-	padding-top: 0.2rem;
+	padding-top: 0.3rem;
 }
 
 .cardBack {

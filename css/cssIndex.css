@@ -78,6 +78,7 @@ body, html {
 }
 
 .messageText {
+	margin: 0.2rem 0;
 	padding: 0 1rem;
 	font-size: 2rem;
 	color: darkblue;
@@ -95,6 +96,9 @@ body, html {
 	#topBackdrop {	
 	background-image: url("../image/sherpaClimberShifted.png");	
 	}
+	#topBackdrop {
+		height: 65rem;
+	}	
 	#headingText {
 		width: 20rem;
 		height: 6.8rem;
@@ -114,7 +118,7 @@ body, html {
 		bottom: 0;
 		left: 0;
 		width: 12rem;
-		height: 33rem;
+		height: 37rem;
 	}	
 }
 
